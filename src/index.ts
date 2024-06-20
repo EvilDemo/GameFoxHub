@@ -319,10 +319,3 @@ $(document).ready(function () {
     });
   }, 250); // 250 milliseconds delay
 });
-import { greetUser } from '$utils/greet';
-
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
-});
