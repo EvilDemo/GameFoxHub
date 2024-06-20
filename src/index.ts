@@ -57,7 +57,7 @@ function makeImagesClickable(container) {
   });
 
   lightbox.addEventListener('click', (event) => {
-    if (event.target == lightbox) {
+    if (event.target === lightbox) {
       lightbox.style.display = 'none';
     }
   });
@@ -309,7 +309,6 @@ $(document).ready(function () {
   setTimeout(function () {
     $('.img-gallery-subs-slide').each(function () {
       const thumbNo = $(this).index();
-      console.log(thumbNo);
       $(this).on('click', function () {
         $('.img-gallery-main')
           .find('.w-slider-dot')
